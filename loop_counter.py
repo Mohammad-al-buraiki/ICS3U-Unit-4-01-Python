@@ -8,6 +8,7 @@
 def main():
     # this function uses a while loop
     loop_counter = 0
+    sum = 0
 
     # input
     print("")
@@ -17,8 +18,10 @@ def main():
     try:
         positive_integer = int(positive_integer)
         while loop_counter < positive_integer:
-            print("{0} time through loop.", sum(loop_counter))
-            loop_counter = loop_counter + 1
+            print("{0} time through loop.". format(loop_counter))
+            loop_counter = (loop_counter + 1)
+            sum = (sum + loop_counter)
+        print("the sum {0} .". format(sum))
 
     except Exception:
         print("sorry, this was not an integer")
